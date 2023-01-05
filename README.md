@@ -3,3 +3,5 @@ whether coursera users will continue their subscription. The dataset
 is a sample of subscriptions that were iniciated in 2021, all
 snapshotted at a particular date before the subscription was
 cancelled.
+
+Achieved top 25 performance in Coursera's Data Science competition.
