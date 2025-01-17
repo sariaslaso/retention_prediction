@@ -1,0 +1,19 @@
+services:
+   jupyter:
+      image: jupyter_image
+      build:
+         context: .
+         dockerfile: Dockerfile
+      volumes:
+         - ./models/:/home/jovyan/models
+         - ./data:/home/jovyan/data
+         - ./notebooks:/home/jovyan/notebooks
+      ports:
+         - 8888:8888
+           #deploy:
+           #   resources:
+           #      reservations:
+           #         devices:
+           #            - driver: nvidia
+           #              count: 1
+           #              capabilities: [gpu]
